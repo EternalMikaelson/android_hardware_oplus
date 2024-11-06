@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 
 public class OsenseResClient {
+
     public static OsenseResClient get(Class clazz) {
         return new OsenseResClient();
     }
