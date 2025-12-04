@@ -94,3 +94,5 @@ type vendor_proc_ultrasound, fs_type, proc_type;
 
 # Versioning
 type vendor_proc_oplus_version, fs_type, proc_type;
+
+type public_adsprpcd_file, file_type;
