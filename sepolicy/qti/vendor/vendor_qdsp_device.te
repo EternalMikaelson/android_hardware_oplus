@@ -1,2 +1,0 @@
-# vendor_qdsp_device - type for /dev/adsprpc-smd
-type vendor_qdsp_device;
