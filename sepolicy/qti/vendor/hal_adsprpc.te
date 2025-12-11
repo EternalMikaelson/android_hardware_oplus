@@ -1,12 +1,2 @@
-# Allow camera HAL access to ADSP character devices (non-secure and secure)
-# Mirror stock OnePlus mapping:
-#   /dev/adsprpc-smd        -> vendor_qdsp_device
-#   /dev/adsprpc-smd-secure -> vendor_xdsp_device
-
-# Prefer scoping to hal_camera_default (camera HAL)
 allow hal_camera_default vendor_qdsp_device:chr_file { open read ioctl getattr };
 allow hal_camera_default vendor_xdsp_device:chr_file { open read ioctl getattr };
-
-# Optional: camera app direct access if needed
-allow opluscamera_app vendor_qdsp_device:chr_file { open read ioctl getattr };
-allow opluscamera_app vendor_xdsp_device:chr_file { open read ioctl getattr };
